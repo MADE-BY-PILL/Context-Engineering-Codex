@@ -1,0 +1,27 @@
+version: 1
+project: "<project>"
+
+include:
+  - path: "docs/context/PRD.md"
+    weight: 1.0
+  - path: "docs/context/ARCHITECTURE.md"
+    weight: 1.0
+  - path: "docs/context/TECHNICAL_PLAN.md"
+    weight: 0.9
+  - path: "docs/context/TESTING_PLAN.md"
+    weight: 0.8
+
+globs:
+  - pattern: "docs/context/ADR/*.md"
+    weight: 0.6
+
+hints:
+  language: "C#"
+  framework: "ASP.NET Core"
+  architecture: "Clean/Hexagonal; constructor DI; no service locator"
+  testing:
+    unit: "xUnit"
+    integration: "Testcontainers"
+  conventions:
+    root_namespace: "<root_namespace>"
+    folders: ["src/Domain","src/Application","src/Infrastructure","src/Api","tests"]
