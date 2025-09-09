@@ -1,29 +1,28 @@
+#parse("CE_vars.vm")
 ---
 context_role: architect
 phase: architecture
 visibility: public
 weight: 0.6
 related: ["ARCHITECTURE.md"]
-owner: <owner>
-project: <project>
-date: 2025-09-07
-adr: 2025-09-07-<slug>
-status: Proposed
-tags: []
+owner: ${USER}
+project: ${PROJECT_NAME}
+date: ${DATE}
+adr: ${DATE}-${NAME}
 ---
 
-# <Decision Title>
+$h ${NAME}
 
-## Context
-- Situation/forces:
-- Alternatives considered:
+$h Context
+- Situação/forças em jogo:
+- Alternativas consideradas:
 
-## Decision
-- Chosen option:
+$h Decision
+- Decisão tomada:
 
-## Consequences
-- Positive:
-- Negative / trade-offs:
+$h Consequences
+- Positivas:
+- Negativas/trade-offs:
 
-## Status
+$h Status
 - Proposed | Accepted | Deprecated | Superseded by: ___

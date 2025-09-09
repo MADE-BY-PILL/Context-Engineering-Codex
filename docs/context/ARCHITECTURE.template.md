@@ -1,32 +1,36 @@
+#parse("CE_vars.vm")
 ---
 context_role: architect
 phase: architecture
 visibility: public
 weight: 1.0
 related: ["PRD.md","TECHNICAL_PLAN.md"]
-owner: <owner>
-project: <project>
-date: 2025-09-07
-tags: []
+owner: ${USER}
+project: ${PROJECT_NAME}
+date: ${DATE}
 ---
 
-# Standards & Structure
-- Architectural style (Hexagonal, Clean, DDD, ...):
-- Bounded Contexts:
-- Layers / Modules:
-- Interfaces / Contracts:
+$h Standards & Structure
+
+- Estilo arquitetural (Hexagonal, Clean Architecture, DDD, …):
+- Bounded Contexts identificados:
+- Camadas / Módulos principais:
+- Interfaces / Contracts previstos:
 
 # Non-Functional Requirements
-- Observability (logs, metrics, tracing):
-- Resilience & availability:
-- Security (authn/authz, encryption):
-- Performance & scalability:
+
+- Observabilidade (logs, métricas, tracing):
+- Resiliência e disponibilidade:
+- Segurança (autenticação, autorização, encriptação):
+- Performance e escalabilidade:
 
 # Architectural Decisions (ADR)
-- Decision 1:
-  - Rationale:
-  - Trade-offs:
-- Decision 2:
+
+- Decisão 1: …
+    - Razão:
+    - Trade-offs:
+- Decisão 2: …
 
 # Open Questions
-- ...
+
+- …

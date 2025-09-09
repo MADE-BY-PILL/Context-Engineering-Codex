@@ -1,26 +1,29 @@
+#parse("CE_vars.vm")
 ---
 context_role: researcher
 phase: research
 visibility: public
 weight: 0.8
-related: ["PRD.md","ARCHITECTURE.md"]
-owner: <owner>
-project: <project>
-date: 2025-09-07
-tags: []
+related: ["ARCHITECTURE.md","PRD.md"]
+owner: ${USER}
+project: ${PROJECT_NAME}
+date: ${DATE}
 ---
 
-# Problem Framing
-- Pain/context:
-- Stakeholders:
-- Known constraints:
+$h Problem Framing
 
-# Signals & Sources
-- Benchmarks / studies:
-- Links to papers/articles:
-- Market/user insights:
+- Contexto / dor identificada:
+- Stakeholders envolvidos:
+- Restrições conhecidas:
 
-# Acceptance Signals
-- [ ] Business question is clearly formulated
-- [ ] Sources are documented
-- [ ] Constraints are mapped
+$h Signals & Sources
+
+- Benchmarks ou estudos relevantes:
+- Links para artigos / papers:
+- Insights de mercado:
+
+$h Acceptance Signals (quando o research está “bom”)
+
+- [ ] Questão de negócio claramente formulada
+- [ ] Fontes de dados/insights documentadas
+- [ ] Restrições mapeadas

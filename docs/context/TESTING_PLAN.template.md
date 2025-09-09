@@ -1,55 +1,63 @@
+#parse("CE_vars.vm")
 ---
 context_role: tester
 phase: testing
 visibility: public
 weight: 0.8
-related: ["TECHNICAL_PLAN.md","PRD.md","ARCHITECTURE.md"]
-owner: <owner>
-project: <project>
-date: 2025-09-07
-tags: []
+related: ["ARCHITECTURE.md","PRD.md","TECHNICAL_PLAN.md"]
+owner: ${USER}
+project: ${PROJECT_NAME}
+date: ${DATE}
 ---
 
-# Strategy
-- Test pyramid: Unit / Integration / E2E / Contract / Performance
-- Scope of this cycle:
-- Environments: Dev / QA / Staging / Prod
-- Test data: synthetic / masked / sampled
+$h Strategy
 
-# Test Cases (high-level)
-- Case 1:
-  - Preconditions:
-  - Steps:
-  - Expected result:
-- Case 2:
+- Pirâmide de testes: Unit / Integration / E2E / Contract / Performance
+- Escopo deste ciclo:
+- Ambientes: Dev / QA / Staging / Prod
+- Dados de teste: sintéticos / mascarados / amostras reais
 
-# Quality Gates
-- Minimum coverage (lines/branches): ___%
-- Linters/SAST: tools & rules
-- Regression policy: how many failures allowed (ideally 0)
-- Accessibility (if applicable): target WCAG
+$h Test Cases (high-level)
 
-# Automation Pipeline
-- Execution: on PR, nightly, release
-- Reporting: where to see reports (CI artifacts, dashboards)
-- Flakiness policy: retries / quarantine / mandatory fix
+- Caso 1: …
+    - Pré-condições:
+    - Passos:
+    - Resultado esperado:
+- Caso 2: …
 
-# Performance & Reliability
-- SLIs/SLOs tested (p95 latency, throughput, error %) 
-- Loads: spike vs sustained
-- Chaos/resilience checks (timeouts, circuit breakers)
+$h Quality Gates
 
-# Security & Privacy
-- AuthN/AuthZ tests
-- Secret management
-- Personal data: anonymization/masking
+- Cobertura mínima (linhas/branches): ___%
+- Linters/SAST: ferramentas e regras
+- Critérios de regressão: quantos testes podem falhar (ideal: 0)
+- Acessibilidade (se aplicável): WCAG alvo
 
-# Observability Checks
-- Essential logs present
-- Metrics exposed (e.g., processed/min)
-- Traces for critical flows
+$h Automation Pipeline
 
-# Release Criteria
-- All PRD MUSTs accepted
-- Quality Gates met
-- Known risks/bugs documented
+- Execução: on PR, nightly, release
+- Relato: onde ver relatórios (CI artifacts, dashboards)
+- Flakiness policy: repetição / quarentena / correção obrigatória
+
+$h Performance & Reliability
+
+- SLIs/SLOs testados (latência p95, throughput, erro %)
+- Cargas: pico vs. sustentada
+- Chaos/Resilience checks (timeouts, circuit breakers)
+
+$h Security & Privacy
+
+- Testes de authZ/authN
+- Gestão de segredos
+- Dados pessoais: anonimização/mascaramento
+
+$h Observability Checks
+
+- Logs essenciais presentes
+- Métricas expostas (ex.: processados/min)
+- Traços para fluxos críticos
+
+$h Release Criteria
+
+- Todos os MUST do PRD aceites
+- Quality Gates cumpridos
+- Riscos/bugs conhecidos documentados

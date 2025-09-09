@@ -1,10 +1,10 @@
 version: 1
-project: "<project>"
+project: "${PROJECT_NAME}"
 
 include:
-  - path: "docs/context/PRD.md"
-    weight: 1.0
   - path: "docs/context/ARCHITECTURE.md"
+    weight: 1.0
+  - path: "docs/context/PRD.md"
     weight: 1.0
   - path: "docs/context/TECHNICAL_PLAN.md"
     weight: 0.9
@@ -18,10 +18,10 @@ globs:
 hints:
   language: "C#"
   framework: "ASP.NET Core"
-  architecture: "Clean/Hexagonal; constructor DI; no service locator"
+  architecture: "Clean/Hexagonal; DI por construtor; sem service locator"
   testing:
     unit: "xUnit"
     integration: "Testcontainers"
   conventions:
-    root_namespace: "<root_namespace>"
-    folders: ["src/Domain","src/Application","src/Infrastructure","src/Api","tests"]
+    root_namespace: "${PROJECT_NAME}"
+    folders: ["Domain","Application","Infrastructure","Api"]

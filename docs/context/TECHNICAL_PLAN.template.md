@@ -1,35 +1,40 @@
+#parse("CE_vars.vm")
 ---
 context_role: engineer
 phase: plan
 visibility: public
 weight: 0.9
 related: ["ARCHITECTURE.md","PRD.md","TESTING_PLAN.md"]
-owner: <owner>
-project: <project>
-date: 2025-09-07
-tags: []
+owner: ${USER}
+project: ${PROJECT_NAME}
+date: ${DATE}
 ---
 
-# Technical Decomposition
+$h Technical Decomposition
+
 - Epics:
 - Features:
-- Tasks (granular, < 1 day):
-- Task dependencies:
+- Tasks (granulares, < 1 dia):
+- Dependências entre tasks:
 
-# Interfaces & Contracts
-- Endpoints (method, route, request/response DTOs):
-- Messaging/events:
-- External integrations:
+$h Interfaces & Contracts
 
-# Data & Schemas
-- Key entities:
-- Tables/collections & keys:
-- Planned migrations:
+- Endpoints (método, rota, request/response DTOs):
+- Mensageria/eventos:
+- Integrações externas:
 
-# Risks & Spikes
-- Technical risks:
-- Spikes (goal, expected output, timebox):
+$h Data & Schemas
 
-# Definition of Ready / Done
-- DoR: criteria to start (context, mocks, data, ...)
-- DoD: criteria to accept (tests, coverage, logging, docs)
+- Entidades principais:
+- Tabelas/coleções e chaves:
+- Migrações previstas:
+
+$h Risks & Spikes
+
+- Riscos técnicos:
+- Spikes necessários (objetivo, saída esperada, prazo):
+
+$h Definition of Ready / Done
+
+- DoR: critérios para iniciar desenvolvimento (contexto, mocks, dados, etc.)
+- DoD: critérios para aceitar merge (testes, cobertura, logging, docs)
